@@ -1,12 +1,10 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { Menu, X } from 'lucide-react';
 import { ContactFormDialog } from '@/components/ContactFormDialog';
 
 const navLinks: { label: string; href: string; external?: boolean }[] = [];
 
 export function Header() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [contactFormOpen, setContactFormOpen] = useState(false);
 
   return (
@@ -41,43 +39,10 @@ export function Header() {
           >
             Contact Us
           </Button>
-          <button
-            className="md:hidden p-2 text-foreground"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label="Toggle menu"
-          >
-            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
         </div>
       </div>
 
-      {/* Mobile Menu */}
-      {mobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-background border-b border-border py-4 px-6">
-          <nav className="flex flex-col gap-4">
-            {navLinks.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                {...(link.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
-                className="text-sm font-semibold hover:text-orange-500 transition-colors py-2"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                {link.label}
-              </a>
-            ))}
-            <Button
-              onClick={() => {
-                setContactFormOpen(true);
-                setMobileMenuOpen(false);
-              }}
-              className="w-full mt-2 rounded-full h-11 bg-orange-500 text-white text-sm font-bold shadow-lg shadow-orange-500/20 hover:bg-orange-600 transition-all"
-            >
-              Contact Us
-            </Button>
-          </nav>
-        </div>
-      )}
+
       {/* Contact Form Modal */}
       <ContactFormDialog open={contactFormOpen} onOpenChange={setContactFormOpen} />
     </header>
