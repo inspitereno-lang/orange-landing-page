@@ -2,7 +2,7 @@ import { Globe, Mail, Phone, MapPin } from 'lucide-react';
 
 
 const contactInfo = [
-  { icon: MapPin, text: 'Ct Arcade Building, Kuthipuzha, Mannarkkad, Palakkad, Kerala, India' },
+  { icon: MapPin, text: 'Kochi Headquarters, Kerala,Kuthipuzha, Mannarkkad, Palakkad, India' },
   { icon: Phone, text: '+91 80865 73727' },
   { icon: Mail, text: 'orangeinternationalmkd@gmail.com' },
   { icon: Globe, text: 'Monday – Saturday: 9:00 AM – 7:00 PM' },

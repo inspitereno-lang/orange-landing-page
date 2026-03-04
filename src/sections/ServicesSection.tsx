@@ -1,4 +1,4 @@
-import { Plane, FileText, Truck, Briefcase } from 'lucide-react';
+import { Plane, FileText, Briefcase, Map, Globe, MapPin } from 'lucide-react';
 
 const services = [
   {
@@ -12,9 +12,9 @@ const services = [
     description: 'Expert guidance through complex visa applications and documentation.',
   },
   {
-    icon: Truck,
-    title: 'Global Cargo',
-    description: 'End-to-end logistics solutions for international freight and cargo.',
+    icon: Map,
+    title: 'Tour Packages',
+    description: 'Expertly crafted international and domestic holiday packages for unforgettable experiences.',
   },
   {
     icon: Briefcase,

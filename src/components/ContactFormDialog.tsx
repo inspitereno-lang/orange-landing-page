@@ -22,7 +22,7 @@ import { Mail, ArrowRight } from 'lucide-react';
 const serviceTypes = [
     'International Flight Booking',
     'Visa Assistance',
-    'Global Cargo Logistics',
+    'Tour Packages',
     'Corporate Travel Mgmt',
 ];
 
