@@ -1,4 +1,4 @@
-import { Plane, FileText, Briefcase, Map, Globe, MapPin } from 'lucide-react';
+import { Plane, FileText, Briefcase, Map } from 'lucide-react';
 
 const services = [
   {
