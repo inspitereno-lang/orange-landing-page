@@ -103,16 +103,8 @@ export function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-6 text-xs font-semibold text-muted-foreground tracking-wide">
+      <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-border flex flex-col items-center justify-center text-xs font-semibold text-muted-foreground tracking-wide">
         <p>© {new Date().getFullYear()} Orange International. All Rights Reserved.</p>
-        <div className="flex gap-8">
-          <a href="#" className="hover:text-orange-500 transition-colors">
-            Privacy Policy
-          </a>
-          <a href="#" className="hover:text-orange-500 transition-colors">
-            Terms of Service
-          </a>
-        </div>
       </div>
     </footer>
   );
