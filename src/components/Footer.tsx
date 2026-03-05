@@ -56,7 +56,7 @@ export function Footer() {
               <div className="relative z-10">
                 <div className="flex items-center gap-2 mb-1">
                   <MapPin className="w-4 h-4 text-orange-500" />
-                  <h5 className="font-bold text-lg text-foreground">Mannarkad</h5>
+                  <h5 className="font-bold text-lg text-foreground">Mannarkkad</h5>
                 </div>
                 <div className="inline-flex items-center rounded-full border border-orange-500/30 bg-orange-500/10 px-2.5 py-0.5 text-xs font-semibold text-orange-600 dark:text-orange-400 mb-2 mt-1">
                   Headquarters
